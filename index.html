@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,36 +16,43 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <div class="container-fluid">
-      <div class="row offset-sm-1">
-        <!-- Header part -->
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Home Section -->
+      <section id="home" class="content">
         <section class="header col-md-4 col-sm-10">
           <h1>Weather Viewer</h1>
         </section>
 
         <section class="main col-md-7 col-sm-10">
-          <!-- input section -->
           <section class="inputs">
-            <input type="text" placeholder="Enter any city..." id="cityinput" />
+            <input type="text" placeholder="Enter any city... (example Moscow)" id="cityinput" />
             <input type="submit" value="Submit" id="add" />
-            <button placeholder="submit" id="add"></button>
           </section>
 
-          <!-- Display section -->
           <section class="display">
             <div class="wrapper">
-              <h2 id="cityoutput"></h2>
-              <p id="description"></p>
-              <p id="temp"></p>
-              <p id="wind"></p>
-              <p id="humidity"></p>
+              <h2 id="cityoutput">City: Moscow</h2>
+              <p id="description">Conditions: overcast clouds</p>
+              <p id="temp">Temperature: 22.66 C</p>
+              <p id="wind">Wind Speed: 5.29 km/h</p>
+              <p id="humidity">Humidity: 42%</p>
             </div>
           </section>
         </section>
-      </div>
-    </div>
+      </section>
 
-    <script type="text/javascript" src="./main.js"></script>
+      <!-- JavaScript file -->
+      <script type="text/javascript" src="main.js"></script>
+    </div>
   </body>
 </html>

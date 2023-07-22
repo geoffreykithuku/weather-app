@@ -1,112 +1,115 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Styles for index.html */
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  margin: 0;
 }
 
-/* --------------------background */
 .container-fluid {
-    background: linear-gradient(135deg, #003366, #0059b3);
-    background-size: cover;
-    height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.row {
-    padding-top: 5.5rem;
-    padding-bottom: 5rem;
+/* Navigation */
+.navbar {
+  background-color: #003366;
+  padding: 1rem;
 }
 
-/* -----------------------------header */
-.header {
-    background: linear-gradient(135deg, #003366, #0059b3);
-    background-size: cover;
-    background-position: relative;
-    color: rgb(12, 11, 6);
-    text-align: center;
-    padding: 5rem;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e4eff7;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #16a864;
+}
+
+/* Home Section */
+#home {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .header h1 {
-    font-weight: 500;
-    font-size: 34px;
-    font-family: 'Indie Flower', cursive;
-    color: #e4eff7;
-}
-
-.header p {
-    margin-top: 1rem;
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: #e4eff7;
-}
-
-a:hover,
-a:visited,
-a:link,
-a:active {
-    text-decoration: none;
-    color: #d0e5f5;
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5rem;
+  color: #003366;
 }
 
 .main {
-    background-color: #003366;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
-/* --------------------------------input section */
 .inputs {
-    padding: 6rem 0 2rem 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .inputs input[type="text"] {
-    height: 3.5rem;
-    width: 30rem;
-    background: #003366;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border: none;
-    background-color: transparent;
-    border-bottom: solid 1px #16a864;
-    color: #16a864;
-    border-radius: 2px;
-    margin-right: 4px;
+  height: 3.5rem;
+  width: 30rem;
+  background: #f5f5f5;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: solid 1px #16a864;
+  color: #16a864;
+  border-radius: 2px;
+  padding: 0 1rem;
 }
 
 .inputs input[type="submit"] {
-    height: 3.5rem;
-    width: 6.5rem;
-    background: #16a864;
-    font-weight: bold;
-    color: ghostwhite;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 2px;
+  height: 3.5rem;
+  width: 6.5rem;
+  background: #16a864;
+  font-weight: bold;
+  color: ghostwhite;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-/* -------------------------------display */
 .display {
-    text-align: center;
-    color: #16a864;
+  text-align: center;
+  color: #16a864;
 }
 
 .wrapper {
-    margin: 0 9rem;
-    width: 50%;
-    background: linear-gradient(135deg, #003366, #0059b3);
-    height: 40vh;
-    margin: 50px auto;
-    border-radius: 2px;
+  margin: 0 1rem;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 5px;
 }
 
 .wrapper h2 {
-    padding: 5px 0;
-    text-align: center;
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 1rem;
 }
 
 .wrapper p {
-    text-align: center;
-    margin: 10px 0;
-    font-size: 20px;
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
 }
